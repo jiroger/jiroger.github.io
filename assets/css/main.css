@@ -51,6 +51,10 @@ hr {
     padding: 0;
 }
 
+h1 {
+    color: red;
+}
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
