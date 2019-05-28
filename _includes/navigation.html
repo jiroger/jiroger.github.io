@@ -1,7 +1,19 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
+<div class="wrapper">
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3> nihao </h3>
+    </div>
+
+    <ul class="list-unstyled components">
+
+      {% for item in site.data.navigation %}
+      <li class="nav-item">
+        <a href="{{ item.link || remove: ".html"}}" {% if page.url == item.link %}style="color: red;" {% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </nav>
+</div>
