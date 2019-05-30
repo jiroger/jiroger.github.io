@@ -1,6 +1,9 @@
 - name: Home
   link: /
+  icon: <i class="fas fa-home fa-fw"></i>
 - name: About
   link: /about.html
+  icon: <i class="fas fa-id-card fa-fw"></i>
 - name: Projects
   link: /projects.html
+  icon: <i class="fas fa-laptop-code fa-fw"></i>
