@@ -30,22 +30,7 @@
   <div class="wrapper">
     {% include navigation.html %}
     {{content}}
-    <script>
-      (function() {
-        if (Boolean(sessionStorage.getItem('collapsed'))) {
 
-          var body = document.getElementsByTagName('body')[0];
-          body.className = body.className + ' notransition';
-
-          document.getElementById("sidebar").className = 'active';
-
-          document.getElementById("content").className = 'active';
-          //content.className = 'active';
-
-          body.classList.remove('notransition');
-        }
-      })();
-    </script>
   </div>
   <script src="/assets/js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

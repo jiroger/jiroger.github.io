@@ -3,5 +3,21 @@ layout: default
 title: About
 ---
 <div id="content">
+  <script>
+    (function() {
+      if (Boolean(sessionStorage.getItem('collapsed'))) {
+
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className + ' notransition';
+
+        document.getElementById("sidebar").className = 'active';
+
+        document.getElementById("content").className = 'active';
+        //content.className = 'active';
+
+        body.classList.remove('notransition');
+      }
+    })();
+  </script>
   This page tells you a little bit about me.
 </div>
