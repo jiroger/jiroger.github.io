@@ -23,12 +23,29 @@
 </head>
 
 <body>
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <div class="wrapper">
     {% include navigation.html %}
     {{content}}
+    <script>
+      (function() {
+        if (Boolean(sessionStorage.getItem('collapsed'))) {
+
+          var body = document.getElementsByTagName('body')[0];
+          body.className = body.className + ' notransition';
+
+          document.getElementById("sidebar").className = 'active';
+
+          document.getElementById("content").className = 'active';
+          //content.className = 'active';
+
+          body.classList.remove('notransition');
+        }
+      })();
+    </script>
   </div>
   <script src="/assets/js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -59,45 +76,21 @@
   <!-- jQuery Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
+    // Click handler can be added latter, after jQuery is loaded...
 
-      var isCollapsed = sessionStorage.getItem("collapsed");
 
-      if (isCollapsed === null) {
-        sessionStorage.setItem("collapsed", "no");
-        //sidebar starts out uncollapsed
+    $('#sidebarCollapse').click(function(event) {
+      event.preventDefault();
+      if (Boolean(sessionStorage.getItem('collapsed'))) {
+        sessionStorage.setItem('collapsed', '');
       } else {
-        if (isCollapsed === "yes") {
-          $('body').addClass('notransition'); // Disable transitions
-
-          $("#sidebar").addClass('active'); // Disable transitions
-          $("#content").addClass('active'); // Disable transitions
-
-          $("#sidebar")[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-          $("#content")[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-
-          //$("#sidebar").removeClass('notransition'); // Re-enable transitions
-          $('body').removeClass('notransition'); // Re-enable transitions
-
-        }
+        sessionStorage.setItem('collapsed', '1');
       }
-
-      $('#sidebarCollapse').on('click', function() {
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-        $('#sidebar').toggleClass('active');
-        $('#content').toggleClass('active');
-
-        if (isCollapsed === "yes") {
-          sessionStorage.setItem("collapsed", "no");
-        } else {
-          sessionStorage.setItem("collapsed", "yes");
-        }
-      });
-
+      $('#sidebar').toggleClass('active');
+      $('#content').toggleClass('active');
     });
   </script>
+
 </body>
 
 </html>
