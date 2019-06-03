@@ -140,7 +140,7 @@ span {
   max-width: 250px;
   background: #7386D5;
   color: #fff;
-  transition: all 0.4s;
+  transition: all 0.3s;
   text-align: center;
   height: 100vh;
   position: fixed;
@@ -240,52 +240,51 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
 }
 
 ul.CTAs {
-    padding: 20px;
+  padding: 20px;
 }
 
 ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 a.download {
-    background: #fff;
-    color: #7386D5;
+  background: #fff;
+  color: #7386D5;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+  background: #6d7fcc !important;
+  color: #fff !important;
 }
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-
 #content {
-    min-width: calc(100% - 250px);
-    max-width: calc(100% - 250px);
-    padding: 40px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
+  min-width: calc(100% - 250px);
+  max-width: calc(100% - 250px);
+  padding: 40px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #content.active {
-    min-width: calc(100% - 80px);
-    max-width: calc(100% - 80px);
+  min-width: calc(100% - 80px);
+  max-width: calc(100% - 80px);
 }
 
 /* ==========================================================================
@@ -363,6 +362,24 @@ a.article:hover {
 
 .clearfix:after {
   clear: both;
+}
+
+.notransition * {
+  /* CSS transitions */
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /* CSS transforms */
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  /* CSS animations */
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
 }
 
 /* ==========================================================================

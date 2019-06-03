@@ -12,19 +12,14 @@
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="/assets/css/normalize.css">
-
   <!-- custom css -->
   <link rel="stylesheet" href="/assets/css/main.css">
-
   <!--font awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <meta name="theme-color" content="#fafafa">
-
   <!--scrollbar css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
 </head>
 
 <body>
@@ -70,9 +65,9 @@
   </ul>
 </nav>
 
-    <h1 id="about-page">About page</h1>
-
-<p>This page tells you a little bit about me.</p>
+    <div id="content">
+  This page tells you a little bit about me.
+</div>
 
   </div>
   <script src="/assets/js/vendor/modernizr-3.7.1.min.js"></script>
@@ -81,7 +76,7 @@
     window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.4.1.min.js"><\/script>')
   </script>
   <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/main.js"></script>
+
 
   <script>
     window.ga = function() {
@@ -94,27 +89,51 @@
     ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
+  <script src="/assets/js/main.js"></script>
   <!--jQuery CDN-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!--Popper.js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <!--Bootstrap.js-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
   <!-- jQuery Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $('#sidebarCollapse').on('click', function() {
+      var isCollapsed = sessionStorage.getItem("collapsed");
 
+      if (isCollapsed === null) {
+        sessionStorage.setItem("collapsed", "no");
+        //sidebar starts out uncollapsed
+      } else {
+        if (isCollapsed === "yes") {
+          $('body').addClass('notransition'); // Disable transitions
+
+          $("#sidebar").addClass('active'); // Disable transitions
+          $("#content").addClass('active'); // Disable transitions
+
+          $("#sidebar")[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+          $("#content")[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+
+          //$("#sidebar").removeClass('notransition'); // Re-enable transitions
+          $('body').removeClass('notransition'); // Re-enable transitions
+
+        }
+      }
+
+      $('#sidebarCollapse').on('click', function() {
         $("#sidebar").mCustomScrollbar({
           theme: "minimal"
         });
-
         $('#sidebar').toggleClass('active');
         $('#content').toggleClass('active');
+
+        if (isCollapsed === "yes") {
+          sessionStorage.setItem("collapsed", "no");
+        } else {
+          sessionStorage.setItem("collapsed", "yes");
+        }
       });
 
     });
