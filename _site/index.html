@@ -28,6 +28,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <div class="wrapper">
+
     <nav id="sidebar">
 
   <div class="sidebar-header">
@@ -68,22 +69,25 @@
 </nav>
 
     <div id="content">
+
   <script>
-    (function() {
-      if (Boolean(sessionStorage.getItem('collapsed'))) {
+  (function() {
+    if (Boolean(sessionStorage.getItem('collapsed'))) {
 
-        var body = document.getElementsByTagName('body')[0];
-        body.className = body.className + ' notransition';
+      var body = document.getElementsByTagName('body')[0];
+      body.className = body.className + ' notransition';
 
-        document.getElementById("sidebar").className = 'active';
+      document.getElementById("sidebar").className = 'active';
 
-        document.getElementById("content").className = 'active';
-        //content.className = 'active';
+      document.getElementById("content").className = 'active';
+      //content.className = 'active';
 
-        body.classList.remove('notransition');
-      }
-    })();
-  </script>
+      body.classList.remove('notransition');
+    }
+  })();
+</script>
+
+
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -116,18 +120,6 @@
     window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.4.1.min.js"><\/script>')
   </script>
   <script src="/assets/js/plugins.js"></script>
-
-
-  <script>
-    window.ga = function() {
-      ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-140938828-1', 'auto');
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview')
-  </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   <script src="/assets/js/main.js"></script>
   <!--jQuery CDN-->
@@ -138,22 +130,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- jQuery Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script type="text/javascript">
-    // Click handler can be added latter, after jQuery is loaded...
-
-
-    $('#sidebarCollapse').click(function(event) {
-      event.preventDefault();
-      if (Boolean(sessionStorage.getItem('collapsed'))) {
-        sessionStorage.setItem('collapsed', '');
-      } else {
-        sessionStorage.setItem('collapsed', '1');
-      }
-      $('#sidebar').toggleClass('active');
-      $('#content').toggleClass('active');
-    });
-  </script>
-
 </body>
 
 </html>
