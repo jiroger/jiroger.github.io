@@ -1,3 +1,4 @@
+//sets up google analytics
 window.ga = function() {
   ga.q.push(arguments)
 };
@@ -7,16 +8,23 @@ ga('create', 'UA-140938828-1', 'auto');
 ga('set', 'transport', 'beacon');
 ga('send', 'pageview')
 
-$('#sidebarCollapse').click(function(event) {
+//takes care of the toggle button
+$('#sidebarCollapse, #topbarCollapse').on('click',
+  function(event) {
+    event.preventDefault();
+    if (Boolean(sessionStorage.getItem('collapsed'))) {
+      sessionStorage.setItem('collapsed', '');
+    } else {
+      sessionStorage.setItem('collapsed', '1');
+    }
+    $('#topbar').toggleClass('active');
+    $('#sidebar').toggleClass('active');
+    $('#content').toggleClass('active');
+  });
+
+//allows for scrollable sidebar when screen gets small
+$(document).ready(function() {
   $("#sidebar").mCustomScrollbar({
     theme: "minimal"
   });
-  event.preventDefault();
-  if (Boolean(sessionStorage.getItem('collapsed'))) {
-    sessionStorage.setItem('collapsed', '');
-  } else {
-    sessionStorage.setItem('collapsed', '1');
-  }
-  $('#sidebar').toggleClass('active');
-  $('#content').toggleClass('active');
 });

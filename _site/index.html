@@ -29,7 +29,19 @@
   <![endif]-->
   <div class="wrapper">
 
-    <nav id="sidebar">
+    <!-- topbar always hidden until media <768px; active class means sidebar compressed into page -->
+<nav id="topbar" class="navbar fixed-top">
+  <ul class="list-unstyled components">
+    <li class="nav-item">
+      <a href="#" id="topbarCollapse">
+        <i class="fas fa-compress-arrows-alt"></i>
+        Toggle
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav id="sidebar">
 
   <div class="sidebar-header">
     <h3> Roger Ji </h3>
@@ -78,7 +90,7 @@
       body.className = body.className + ' notransition';
 
       document.getElementById("sidebar").className = 'active';
-
+      document.getElementById("topbar").className = document.getElementById("topbar").className + ' active';
       document.getElementById("content").className = 'active';
       //content.className = 'active';
 
