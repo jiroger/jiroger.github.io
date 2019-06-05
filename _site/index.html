@@ -31,7 +31,27 @@
 
     <!-- topbar always hidden until media <768px; active class means sidebar compressed into page -->
 <nav id="topbar" class="navbar fixed-top">
-  <ul class="list-unstyled components">
+  <div class="topbar-header">
+    <h3> Roger Ji</h3>
+  </div>
+
+  <div class="topbar-header">
+    
+    <a href="/">
+      <i class="fab fa-linkedin fa-fw"></i>
+    </a>
+    
+    <a href="https://github.com/jiroger">
+      <i class="fab fa-github-square fa-fw"></i>
+    </a>
+    
+    <a href="/">
+      <i class="fas fa-envelope-square fa-fw"></i>
+    </a>
+    
+  </div>
+  <!--collapse left button-->
+  <ul class="list-unstyled">
     <li class="nav-item">
       <a href="#" id="topbarCollapse">
         <i class="fas fa-compress-arrows-alt"></i>
@@ -40,7 +60,7 @@
     </li>
   </ul>
 </nav>
-
+<!-- code for sidebar-->
 <nav id="sidebar">
 
   <div class="sidebar-header">
@@ -48,7 +68,7 @@
     <strong> RJ </strong>
   </div>
 
-  <ul class="list-unstyled components">
+  <ul class="list-unstyled">
     
     <li class="nav-item">
       <a href="/" style="background-color: rgba(0,0,0,0.4);" >
@@ -72,10 +92,61 @@
     </li>
     
     <li class="nav-item">
+      <a href="/resume" >
+        <i class="fas fa-file-invoice fa-fw"></i>
+        Resume
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="/fun" >
+        <i class="fas fa-smile-beam fa-fw"></i>
+        Fun Stuff
+      </a>
+    </li>
+    
+
+  </ul>
+  <!-- links section -->
+  <ul class="list-unstyled">
+    <hr style="border-top: 2px solid white">
+    
+    <li class="nav-item">
+      <a href="/">
+        <i class="fab fa-linkedin fa-fw"></i>
+        LinkedIn
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="https://github.com/jiroger">
+        <i class="fab fa-github-square fa-fw"></i>
+        Github
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a href="/">
+        <i class="fas fa-envelope-square fa-fw"></i>
+        Email
+      </a>
+    </li>
+    
+    <hr style="border-top: 2px solid white">
+
+    <li class="nav-item">
       <a href="#" id="sidebarCollapse">
         <i class="fas fa-compress-arrows-alt fa-fw"></i>
         Toggle
       </a>
+    </li>
+  </ul>
+  <hr style="border-top: 2px solid white">
+
+  <!-- last modified section -->
+  <ul class="list-unstyled">
+    <li class="nav-item">
+      <p id="lastModified"></p>
     </li>
   </ul>
 </nav>
@@ -92,6 +163,7 @@
       document.getElementById("sidebar").className = 'active';
       document.getElementById("topbar").className = document.getElementById("topbar").className + ' active';
       document.getElementById("content").className = 'active';
+      document.getElementById("lastModified").className = 'active';
       //content.className = 'active';
 
       body.classList.remove('notransition');
@@ -100,7 +172,7 @@
 </script>
 
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  <p>Lorem ipsumdddd dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

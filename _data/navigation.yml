@@ -7,3 +7,9 @@
 - name: Projects
   link: /projects.html
   icon: <i class="fas fa-laptop-code fa-fw"></i>
+- name: Resume
+  link: /resume.html
+  icon: <i class="fas fa-file-invoice fa-fw"></i>
+- name: Fun Stuff
+  link: /fun.html
+  icon: <i class="fas fa-smile-beam fa-fw"></i>

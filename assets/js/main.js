@@ -20,6 +20,7 @@ $('#sidebarCollapse, #topbarCollapse').on('click',
     $('#topbar').toggleClass('active');
     $('#sidebar').toggleClass('active');
     $('#content').toggleClass('active');
+    $('#lastModified').toggleClass('active');
   });
 
 //allows for scrollable sidebar when screen gets small
@@ -27,4 +28,6 @@ $(document).ready(function() {
   $("#sidebar").mCustomScrollbar({
     theme: "minimal"
   });
+  //date this page was last modified
+  document.getElementById("lastModified").innerHTML = 'Last modified: ' +  document.lastModified;
 });

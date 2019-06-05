@@ -1,6 +1,18 @@
 <!-- topbar always hidden until media <768px; active class means sidebar compressed into page -->
 <nav id="topbar" class="navbar fixed-top">
-  <ul class="list-unstyled components">
+  <div class="topbar-header">
+    <h3> Roger Ji</h3>
+  </div>
+
+  <div class="topbar-header">
+    {% for item in site.data.links %}
+    <a href="{{ item.link }}">
+      {{ item.icon }}
+    </a>
+    {% endfor %}
+  </div>
+  <!--collapse left button-->
+  <ul class="list-unstyled">
     <li class="nav-item">
       <a href="#" id="topbarCollapse">
         <i class="fas fa-compress-arrows-alt"></i>
@@ -9,7 +21,7 @@
     </li>
   </ul>
 </nav>
-
+<!-- code for sidebar-->
 <nav id="sidebar">
 
   <div class="sidebar-header">
@@ -17,7 +29,7 @@
     <strong> RJ </strong>
   </div>
 
-  <ul class="list-unstyled components">
+  <ul class="list-unstyled">
     {% for item in site.data.navigation %}
     <li class="nav-item">
       <a href="{{ item.link || remove: ".html"}}" {% if page.url == item.link %}style="background-color: rgba(0,0,0,0.4);" {% endif %}>
@@ -26,11 +38,34 @@
       </a>
     </li>
     {% endfor %}
+
+  </ul>
+  <!-- links section -->
+  <ul class="list-unstyled">
+    <hr style="border-top: 2px solid white">
+    {% for item in site.data.links %}
+    <li class="nav-item">
+      <a href="{{ item.link }}">
+        {{ item.icon }}
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+    <hr style="border-top: 2px solid white">
+
     <li class="nav-item">
       <a href="#" id="sidebarCollapse">
         <i class="fas fa-compress-arrows-alt fa-fw"></i>
         Toggle
       </a>
+    </li>
+  </ul>
+  <hr style="border-top: 2px solid white">
+
+  <!-- last modified section -->
+  <ul class="list-unstyled">
+    <li class="nav-item">
+      <p id="lastModified"></p>
     </li>
   </ul>
 </nav>
