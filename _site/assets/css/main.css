@@ -201,7 +201,6 @@ span {
 
 #sidebar .sidebar-header {
   padding: 20px;
-
 }
 
 #sidebar .sidebar-header strong {
@@ -287,7 +286,6 @@ ul.CTAs a {
 /*--------------------
 miscellaneous css stuff
 -------------------*/
-
 #lastModified {
   font-size: 1em;
   padding: 10px;
@@ -296,6 +294,34 @@ miscellaneous css stuff
 #lastModified.active {
   display: none;
 }
+
+.panel img {
+  height: 35vh;
+  display: block;
+  margin: 5vh 0vh;
+  transition: all 0.3s;
+}
+
+.panel:hover .image {
+  opacity: 0.2;
+}
+
+.description {
+  transition: 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.panel:hover .description {
+  opacity: 1;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -398,8 +424,9 @@ miscellaneous css stuff
    Modify as content requires.
    ========================================================================== */
 @media (max-width: 768px) {
+
   /* ----------------------
-  sidebar styling
+  sidebar styling FOR MOBILE
   ------------------------ */
   #sidebar {
     min-width: 80px;
@@ -448,8 +475,9 @@ miscellaneous css stuff
   #lastModified {
     display: none;
   }
+
   /* ----------------------
-   topbar styling
+   topbar styling FOR MOBILE
    ----------------------- */
   #topbar {
     visibility: hidden;
@@ -465,7 +493,6 @@ miscellaneous css stuff
   #topbar.active {
     visibility: visible;
     margin-top: 0px;
-
   }
 
   #topbar ul li a i {
@@ -497,16 +524,15 @@ miscellaneous css stuff
   }
 
   /* -----------------------------
-  content styling
+  content styling FOR MOBILE
    ----------------------------- */
-
   #content {
     min-width: calc(100% - 80px);
     max-width: calc(100% - 80px);
   }
 
   #content.active {
-    padding-top: 80px;
+    padding-top: 100px;
     min-width: 100%;
     max-width: 100%;
   }
