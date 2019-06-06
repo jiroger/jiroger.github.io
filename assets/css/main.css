@@ -138,7 +138,9 @@ span {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #7386D5;
+  background-image: url("/assets/img/sidebar.jpg");
+  background-size: cover;
+  background-position: center;
   color: #fff;
   transition: all 0.3s;
   text-align: center;
@@ -199,7 +201,7 @@ span {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #6d7fcc;
+
 }
 
 #sidebar .sidebar-header strong {
@@ -207,14 +209,10 @@ span {
   font-size: 1.8em;
 }
 
-#sidebar ul.components {
-  padding: 20px 0;
-  border-bottom: 1px solid #47748b;
-}
-
 #sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff;
+  color: black;
+  background: white;
+  mix-blend-mode: screen;
 }
 
 #sidebar ul li a i {
@@ -457,7 +455,9 @@ miscellaneous css stuff
     visibility: hidden;
     margin-top: -80px;
     transition: all 0.3s;
-    background: #7386D5;
+    background-image: url("/assets/img/topbar.jpg");
+    background-position: bottom;
+    background-size: cover;
     color: #fff;
     padding-bottom: 0px;
   }
@@ -465,6 +465,7 @@ miscellaneous css stuff
   #topbar.active {
     visibility: visible;
     margin-top: 0px;
+
   }
 
   #topbar ul li a i {
@@ -475,21 +476,26 @@ miscellaneous css stuff
   }
 
   #topbar ul li a {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 1.1em;
     text-align: center;
     color: #fff;
   }
 
+  #topbar ul li a:hover {
+    color: black;
+  }
+
   #topbar .topbar-header {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-left: 10px;
     font-size: 1.8em
   }
 
-  #topbar img {
-    padding: 0px 10px;
+  #topbar h3 {
+    margin-top: 8px;
   }
+
   /* -----------------------------
   content styling
    ----------------------------- */
