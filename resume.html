@@ -3,6 +3,13 @@ layout: default
 title: Resume
 ---
 <div id="content">
+  THIS IS OUTDATED DONT LOOK AT RESUME
+  <div id="resumeBox"; style="height: 100vh;">
+  </div>
   {% include notransition.html %}
-  reusmeumsuemsuemseumseumse
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+<script>
+  PDFObject.embed("/assets/pdf/test.pdf", "#resumeBox");
+</script>
