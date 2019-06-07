@@ -1,26 +1,4 @@
-<!-- topbar always hidden until media <768px; active class means sidebar compressed into page -->
-<nav id="topbar" class="navbar fixed-top">
-  <div class="topbar-header">
-    <h3> Roger Ji</h3>
-  </div>
 
-  <div class="topbar-header">
-    {% for item in site.data.links %}
-    <a href="{{ item.link }}">
-      {{ item.icon }}
-    </a>
-    {% endfor %}
-  </div>
-  <!--collapse left button-->
-  <ul class="list-unstyled">
-    <li class="nav-item">
-      <a href="#" id="topbarCollapse">
-        <i class="fas fa-compress-arrows-alt"></i>
-        Toggle
-      </a>
-    </li>
-  </ul>
-</nav>
 <!-- code for sidebar-->
 <nav id="sidebar">
 
@@ -69,4 +47,28 @@
     </li>
   </ul>
   {% include footer.html %}
+</nav>
+
+<!-- topbar always hidden until media <768px; active class means sidebar compressed into page -->
+<nav id="topbar" class="navbar fixed-top">
+  <div class="topbar-header">
+    <h3> Roger Ji</h3>
+  </div>
+
+  <div class="topbar-header">
+    {% for item in site.data.links %}
+    <a href="{{ item.link }}">
+      {{ item.icon }}
+    </a>
+    {% endfor %}
+  </div>
+  <!--collapse left button-->
+  <ul class="list-unstyled">
+    <li class="nav-item">
+      <a href="#" id="topbarCollapse">
+        <i class="fas fa-compress-arrows-alt"></i>
+        Toggle
+      </a>
+    </li>
+  </ul>
 </nav>

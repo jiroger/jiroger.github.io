@@ -276,11 +276,21 @@ ul.CTAs a {
   position: absolute;
   top: 0;
   right: 0;
+  font-size: 1.5em;
 }
 
 #content.active {
   min-width: calc(100% - 80px);
   max-width: calc(100% - 80px);
+}
+
+#content a {
+  color: blue;
+}
+
+#content a:hover {
+  transition: 0.3s ease;
+  color: red;
 }
 
 /*--------------------
