@@ -1,9 +1,9 @@
 - name: LinkedIn
-  link: /
+  link: https://www.linkedin.com/in/roger-j-b3a028126/
   icon: <i class="fab fa-linkedin fa-fw"></i>
 - name: Github
   link: https://github.com/jiroger
   icon: <i class="fab fa-github-square fa-fw"></i>
 - name: Email
-  link: /
+  link: mailto:roger.ji.32021@gmail.com
   icon: <i class="fas fa-envelope-square fa-fw"></i>

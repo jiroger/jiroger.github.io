@@ -82,7 +82,7 @@
     <hr style="border-top: 2px solid white">
     
     <li class="nav-item">
-      <a href="/">
+      <a href="https://www.linkedin.com/in/roger-j-b3a028126/">
         <i class="fab fa-linkedin fa-fw"></i>
         LinkedIn
       </a>
@@ -96,15 +96,16 @@
     </li>
     
     <li class="nav-item">
-      <a href="/">
+      <a href="mailto:roger.ji.32021@gmail.com">
         <i class="fas fa-envelope-square fa-fw"></i>
         Email
       </a>
     </li>
     
-    <hr style="border-top: 2px solid white">
 
-    <li class="nav-item">
+
+    <li class="nav-item" id="toggle">
+      <hr style="border-top: 2px solid white">
       <a href="#" id="sidebarCollapse">
         <i class="fas fa-compress-arrows-alt fa-fw"></i>
         Toggle
@@ -143,7 +144,7 @@
 
   <div class="topbar-header">
     
-    <a href="/">
+    <a href="https://www.linkedin.com/in/roger-j-b3a028126/">
       <i class="fab fa-linkedin fa-fw"></i>
     </a>
     
@@ -151,7 +152,7 @@
       <i class="fab fa-github-square fa-fw"></i>
     </a>
     
-    <a href="/">
+    <a href="mailto:roger.ji.32021@gmail.com">
       <i class="fas fa-envelope-square fa-fw"></i>
     </a>
     
@@ -171,16 +172,20 @@
 
   <script>
   (function() {
+    //temporary fix for windows problem; disable toggle until more info gathered
+    if (navigator.appVersion.indexOf("Win") != -1) {
+      document.getElementById("toggle").className = document.getElementById("toggle").className + ' hidden';
+    }
     if (Boolean(sessionStorage.getItem('collapsed'))) {
-
+      //no transition for entire boody
       var body = document.getElementsByTagName('body')[0];
       body.className = body.className + ' notransition';
-
+      //collapse everything
       document.getElementById("sidebar").className = 'active';
-      document.getElementById("topbar").className = document.getElementById("topbar").className + ' active';
       document.getElementById("content").className = 'active';
       document.getElementById("lastModified").className = 'active';
-      //content.className = 'active';
+      document.getElementById("topbar").className = document.getElementById("topbar").className + ' active';
+      //reinstate transitions
 
       body.classList.remove('notransition');
     }

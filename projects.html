@@ -5,86 +5,39 @@ title: Projects
 <div id="content">
   {% include notransition.html %}
   <div class="container-fluid">
+    {% for project in site.data.projects %}
+    {% assign loopindex = forloop.index | modulo: 3 %}
+    {% if loopindex == 1 %}
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="panel">
+          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <div class="description">
+            {{ project.name }}
+          </div>
+        </div>
+      </div>
+      {% elsif loopindex == 2 %}
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="panel">
+          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <div class="description">
+            {{ project.name }}
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="panel">
+          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <div class="description">
+            {{ project.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
     <!-- row 1 -->
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            fnfnf
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            asdlkfj
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            the images are just placeholders
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- row 2 -->
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            Little Free Kindness
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            no
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            no
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- row 3 -->
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            idk yet
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            idk yet
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="/assets/img/download.png" class="mx-auto rounded image">
-          <div class="description">
-            idk yet
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
