@@ -277,6 +277,7 @@ ul.CTAs a {
   top: 0;
   right: 0;
   font-size: 1.5em;
+  text-align: justify;
 }
 
 #content.active {
@@ -293,6 +294,16 @@ ul.CTAs a {
   color: red;
 }
 
+#content .pics {
+  width: 40vh;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+#content .imgwrap {
+  margin-left: calc(40vh + 50px)
+}
+
 /*--------------------
 miscellaneous css stuff
 -------------------*/
@@ -303,33 +314,6 @@ miscellaneous css stuff
 
 #lastModified.active {
   display: none;
-}
-
-.panel img {
-  height: 35vh;
-  display: block;
-  margin: 5vh 0vh;
-  transition: all 0.3s;
-}
-
-.panel:hover .image {
-  opacity: 0.2;
-}
-
-.description {
-  transition: 0.3s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.panel:hover .description {
-  opacity: 1;
 }
 
 /* ==========================================================================
@@ -539,12 +523,17 @@ miscellaneous css stuff
   #content {
     min-width: calc(100% - 80px);
     max-width: calc(100% - 80px);
+    text-align: left;
   }
 
   #content.active {
     padding-top: 100px;
     min-width: 100%;
     max-width: 100%;
+  }
+
+  #content .imgwrap {
+    margin-left: 0px;
   }
 }
 

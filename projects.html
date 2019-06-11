@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Projects
+othercss: /assets/css/projects.css
+
 ---
 <div id="content">
   {% include notransition.html %}
@@ -11,7 +13,7 @@ title: Projects
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <div class="panel">
-          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <img src="{{ project.pic }}" class="mx-auto rounded image">
           <div class="description">
             {{ project.name }}
           </div>
@@ -20,7 +22,7 @@ title: Projects
       {% elsif loopindex == 2 %}
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <div class="panel">
-          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <img src="{{ project.pic }}" class="mx-auto rounded image">
           <div class="description">
             {{ project.name }}
           </div>
@@ -29,7 +31,7 @@ title: Projects
       {% else %}
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <div class="panel">
-          <img src="{{ project.link }}" class="mx-auto rounded image">
+          <img src="{{ project.pic }}" class="mx-auto rounded image">
           <div class="description">
             {{ project.name }}
           </div>
