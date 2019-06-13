@@ -1,14 +1,35 @@
-- name: mew
-  pic: /assets/img/download.png
+- name: Xuhuai Ji's Homepage
+  pic: /assets/img/xx.png
+  text: Father's personal website; first CS project ever.
+  github: #
+  link: https://stanford.edu/~r2llabc
 - name: asdf
-  pic: /assets/img/download.png
+  pic: /assets/img/xx.png
+  text: 2
+  github: #
+  link: #
 - name: fasdjf
   pic: /assets/img/download.png
+  text: 3
+  github: #
+  link: #
 - name: fasdjf
   pic: /assets/img/download.png
+  text: 4
+  github: #
+  link: #
 - name: fasdjf
   pic: /assets/img/download.png
+  text: 5
+  github: #
+  link: #
 - name: fasdjf
   pic: /assets/img/download.png
+  text: 6
+  github: #
+  link: #
 - name: fasdjf
   pic: /assets/img/download.png
+  text: 7
+  github: #
+  link: #

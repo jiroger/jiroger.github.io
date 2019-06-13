@@ -285,11 +285,11 @@ ul.CTAs a {
   max-width: calc(100% - 80px);
 }
 
-#content a {
+#content p a {
   color: blue;
 }
 
-#content a:hover {
+#content p a:hover {
   transition: 0.3s ease;
   color: red;
 }
@@ -524,6 +524,7 @@ miscellaneous css stuff
     min-width: calc(100% - 80px);
     max-width: calc(100% - 80px);
     text-align: left;
+    font-size: 1em;
   }
 
   #content.active {

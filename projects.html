@@ -8,32 +8,38 @@ othercss: /assets/css/projects.css
   {% include notransition.html %}
   <div class="container-fluid">
     {% for project in site.data.projects %}
-    {% assign loopindex = forloop.index | modulo: 3 %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
         <div class="panel">
-          <img src="{{ project.pic }}" class="mx-auto rounded image">
+          <img src="{{ project.pic }}" class="img-fluid mx-auto rounded image">
           <div class="description">
-            {{ project.name }}
+            <b>{{ project.name }}</b>
+            <p>
+              {{ project.text }}
+            </p>
+            <div class="btn-group" role="group" aria-label="Useful links">
+              <a role="button" class="btn btn-outline-dark btn-lg" href="{{ project.github }}"><i class="fab fa-github"></i></a>
+              <a role="button" class="btn btn-outline-dark btn-lg" href="{{ project.link }}"><i class="fas fa-link"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      {% elsif loopindex == 2 %}
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <div class="panel">
-          <img src="{{ project.pic }}" class="mx-auto rounded image">
-          <div class="description">
-            {{ project.name }}
-          </div>
-        </div>
-      </div>
+
       {% else %}
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
         <div class="panel">
-          <img src="{{ project.pic }}" class="mx-auto rounded image">
+          <img src="{{ project.pic }}" class="img-fluid mx-auto rounded image">
           <div class="description">
-            {{ project.name }}
+            <b>{{ project.name }}</b>
+            <p>
+              {{ project.text }}
+            </p>
+            <div class="btn-group" role="group" aria-label="Useful links">
+              <a role="button" class="btn btn-outline-dark" href="{{ project.github }}"><i class="fab fa-github"></i></a>
+              <a role="button" class="btn btn-outline-dark" href="{{ project.link }}"><i class="fas fa-link"></i></a>
+            </div>
           </div>
         </div>
       </div>

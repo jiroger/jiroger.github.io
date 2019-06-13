@@ -176,6 +176,13 @@
     if (navigator.appVersion.indexOf("Win") != -1) {
       document.getElementById("toggle").className = document.getElementById("toggle").className + ' hidden';
     }
+    //the spaz is happening to mac; probably cuz adding images makes page load slower.
+    //this feature is too gimicky, until i find better solution no toggle
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      document.getElementById("toggle").className = document.getElementById("toggle").className + ' hidden';
+    }
+
+    //6/12/19: possible fix to try, delegate the sidebar collapsing to the body tags (e.g. body #sidebarCollapse {...})
     if (Boolean(sessionStorage.getItem('collapsed'))) {
       //no transition for entire boody
       var body = document.getElementsByTagName('body')[0];
@@ -196,18 +203,30 @@
 
     <img src="/assets/img/ucsdgoons.PNG" class="pics img-fluid float-left rounded">
     <p>
-      <hr class="imgwrap">
-      Welcome to my site! Whether you're a recruiter or just a curious Triton who's heard my name before, here is where you'll find lots of interesting tidbits.
-      If you have any relevant comments while browsing around, hit that Email button, and I'm all ears.
-    </p>
 
+      Welcome to my virtual abode! Whether you're a recruiter or curious Triton who's heard my name before, here is where I hope you'll find lots of interesting tidbits.
+      I created this website with the intention of showcasing both my academic and non-academic side, so if you have any relevant comments while browsing around, hit that Email button, and I'm all ears.
+      Hope you have a wonderful time looking around!
+    </p>
+    <br>
     <p class="text-center">
       (That's me in the middle &#128579;)
     </p>
-    <hr class="imgwrap">
-    <br><br>
-    <img src="/assets/img/ucsd.png" class="pics img-fluid mx-auto d-block rounded"; style="width: 40vw">
+    <br>
+    <p align="center">
+      Big shoutout to <a href="https://liamgillies.github.io">Liam Gillies</a> for helping me test and refine this site.
 
+    </p>
+    <br>
+
+    <div class="text-center">
+      <div class="btn-group" role="group" aria-label="Useful links">
+        <a role="button" class="btn btn-outline-dark btn-lg" href="/sitemap">Sitemap</a>
+        <a role="button" class="btn btn-outline-dark btn-lg" href="https://github.com/jiroger/jiroger.github.io">Github Repo</a>
+
+      </div>
+    </div>
+    <br>
   </div>
 </div>
 

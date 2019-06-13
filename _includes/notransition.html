@@ -4,6 +4,13 @@
     if (navigator.appVersion.indexOf("Win") != -1) {
       document.getElementById("toggle").className = document.getElementById("toggle").className + ' hidden';
     }
+    //the spaz is happening to mac; probably cuz adding images makes page load slower.
+    //this feature is too gimicky, until i find better solution no toggle
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      document.getElementById("toggle").className = document.getElementById("toggle").className + ' hidden';
+    }
+
+    //6/12/19: possible fix to try, delegate the sidebar collapsing to the body tags (e.g. body #sidebarCollapse {...})
     if (Boolean(sessionStorage.getItem('collapsed'))) {
       //no transition for entire boody
       var body = document.getElementsByTagName('body')[0];

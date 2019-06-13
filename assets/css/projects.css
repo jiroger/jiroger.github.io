@@ -1,13 +1,14 @@
 
 .panel img {
-  height: 35vh;
+
+  width: 100%;
   display: block;
-  margin: 5vh 0vh;
+  margin: 15px 20px;
   transition: all 0.3s;
 }
 
 .panel:hover .image {
-  opacity: 0.2;
+  opacity: 0.15;
 }
 
 .description {
@@ -24,4 +25,14 @@
 
 .panel:hover .description {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.8em;
+  }
+  .btn {
+    font-size: 1em;
+    padding: 3px 8px;
+  }
 }
