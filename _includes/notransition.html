@@ -18,6 +18,12 @@
       document.getElementById("content").className = 'active';
       document.getElementById("lastModified").className = 'active';
       document.getElementById("topbar").className = document.getElementById("topbar").className + ' active';
+
+      document.getElementById("sidebar").offsetHeight;
+      document.getElementById("content").offsetHeight;
+      document.getElementById("lastModified").offsetHeight;
+      document.getElementById("topbar").offsetHeight;
+
       //reinstate transitions
 
       body.classList.remove('notransition');
