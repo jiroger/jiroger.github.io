@@ -1,0 +1,10 @@
+- dataTargets: <li data-target="#funSliders" data-slide-to="0" class="active"></li>
+  pic: /assets/img/flowers.jpg
+  header: I love the great outdoors!
+  text: (Poppy bloom near Lancaster)
+  alt: flowers
+- dataTargets: <li data-target="#funSliders" data-slide-to="1"></li>
+  pic: /assets/img/waterfall.jpg
+  header: I love the great outdoors!
+  text: (Snolqualmie Falls in upstate Washington)
+  alt: waterfall;

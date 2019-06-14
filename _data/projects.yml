@@ -1,17 +1,17 @@
 - name: Xuhuai Ji's Homepage
-  pic: /assets/img/xx.png
-  text: Father's personal website; first CS project ever.
+  pic: /assets/img/xji.jpg
+  text: Father's personal website.
   github: #
   link: https://stanford.edu/~r2llabc
-- name: asdf
-  pic: /assets/img/xx.png
-  text: 2
-  github: #
-  link: #
-- name: fasdjf
-  pic: /assets/img/download.png
-  text: 3
-  github: #
+- name: MySet
+  pic: /assets/img/set.png
+  text: A Java-based recreation of the <a href="https://www.setgame.com/"> card game Set</a>.
+  github: https://github.com/jiroger/myset
+  link: /projects/myset
+- name: Shakespeare Generator
+  pic: /assets/img/shakespeare.jpg
+  text: Uses NLP to create fake Shakespearean works.
+  github: https://github.com/jiroger/shakespearegenerator
   link: #
 - name: fasdjf
   pic: /assets/img/download.png

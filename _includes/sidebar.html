@@ -23,7 +23,7 @@
     <hr style="border-top: 2px solid white">
     {% for item in site.data.links %}
     <li class="nav-item">
-      <a href="{{ item.link }}">
+      <a href="{{ item.link }}" target="_blank">
         {{ item.icon }}
         {{ item.name }}
       </a>
@@ -58,7 +58,7 @@
 
   <div class="topbar-header">
     {% for item in site.data.links %}
-    <a href="{{ item.link }}">
+    <a href="{{ item.link }}" target="_blank">
       {{ item.icon }}
     </a>
     {% endfor %}
