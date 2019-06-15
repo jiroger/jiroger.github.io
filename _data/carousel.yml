@@ -8,3 +8,23 @@
   header: I love the great outdoors!
   text: (Snolqualmie Falls in upstate Washington)
   alt: waterfall;
+- dataTargets: <li data-target="#funSliders" data-slide-to="2"></li>
+  pic: /assets/img/cave.jpg
+  header: I love the great outdoors!
+  text: (Longhorn Caverns in central Texas)
+  alt: cave;
+- dataTargets: <li data-target="#funSliders" data-slide-to="3"></li>
+  pic: /assets/img/congress.jpg
+  header: I love visiting history museums!
+  text: (Congress Hall)
+  alt: congress;
+- dataTargets: <li data-target="#funSliders" data-slide-to="4"></li>
+  pic: /assets/img/midway.jpg
+  header: I love visiting history museums!
+  text: (USS Midway)
+  alt: midway;
+- dataTargets: <li data-target="#funSliders" data-slide-to="5"></li>
+  pic: /assets/img/lbj.jpg
+  header: I love visiting history museums!
+  text: (The view outside LBJ Presidential Library)
+  alt: midway;
