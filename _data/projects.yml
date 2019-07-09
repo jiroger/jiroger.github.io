@@ -3,33 +3,40 @@
   text: Father's personal website.
   github: #
   link: https://stanford.edu/~r2llabc
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: MySet
   pic: /assets/img/set.png
   text: A Java-based recreation of the <a href="https://www.setgame.com/"> card game Set</a>.
   github: https://github.com/jiroger/myset
-  link: /projects/myset
+  link: /assets/code/MySetRunnable.jar
+  linkOrDownload: <i class="fas fa-download"></i>
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
   text: Uses NLP to create fake Shakespearean works.
   github: https://github.com/jiroger/shakespearegenerator
   link: #
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: fasdjf
   pic: /assets/img/download.png
   text: 4
   github: #
   link: #
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: fasdjf
   pic: /assets/img/download.png
   text: 5
   github: #
   link: #
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: fasdjf
   pic: /assets/img/download.png
   text: 6
   github: #
   link: #
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: fasdjf
   pic: /assets/img/download.png
   text: 7
   github: #
   link: #
+  linkOrDownload: <i class="fas fa-link"></i>
