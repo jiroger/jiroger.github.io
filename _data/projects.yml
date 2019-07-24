@@ -12,16 +12,16 @@
   linkOrDownload: <i class="fas fa-download"></i>
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
-  text: Uses NLP to create fake Shakespearean works.
+  text: Uses NLP to generate Shakespearean works.
   github: https://github.com/jiroger/shakespearegenerator
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
-- name: fasdjf
-  pic: /assets/img/download.png
-  text: 4
-  github: #
-  link: #
-  linkOrDownload: <i class="fas fa-link"></i>
+- name: 2048
+  pic: /assets/img/2048.png
+  text: 2048, except it's written in Java.
+  github: https://github.com/jiroger/2048
+  link: /assets/code/Run2048.jar
+  linkOrDownload: <i class="fas fa-download"></i>
 - name: fasdjf
   pic: /assets/img/download.png
   text: 5
