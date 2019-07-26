@@ -1,6 +1,6 @@
 - name: Xuhuai Ji's Homepage
   pic: /assets/img/xji.jpg
-  text: Father's personal website.
+  text: Father's personal & professional website.
   github: #
   link: https://stanford.edu/~r2llabc
   linkOrDownload: <i class="fas fa-link"></i>
@@ -12,26 +12,26 @@
   linkOrDownload: <i class="fas fa-download"></i>
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
-  text: Uses NLP to generate Shakespearean works.
+  text: Uses NLP to generate Shakespearean works. Made with Python.
   github: https://github.com/jiroger/shakespearegenerator
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
 - name: 2048
-  pic: /assets/img/2048.png
-  text: 2048, except it's written in Java.
+  pic: /assets/img/2048.jpg
+  text: Written in Java & Processing (the original used JS).
   github: https://github.com/jiroger/2048
   link: /assets/code/Run2048.jar
   linkOrDownload: <i class="fas fa-download"></i>
-- name: fasdjf
-  pic: /assets/img/download.png
-  text: 5
-  github: #
+- name: This Website
+  pic: /assets/img/R.png
+  text: (No description necessary... hopefully)
+  github: https://github.com/jiroger/jiroger.github.io
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
-- name: fasdjf
-  pic: /assets/img/download.png
-  text: 6
-  github: #
+- name: songfp
+  pic: /assets/img/spectrogram.jpg
+  text: Shazam on a very teeny, tiny scale.
+  github: https://github.com/jiroger/songfp
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
 - name: fasdjf
