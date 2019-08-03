@@ -1,3 +1,9 @@
+- name: Dailies-Bot
+  pic: /assets/img/download.png
+  text: Automates all the common dailies + more for Neopets.
+  github: https://github.com/jiroger/dailies-bot
+  link: #
+  linkOrDownload: <i class="fas fa-link"></i>
 - name: Xuhuai Ji's Homepage
   pic: /assets/img/xji.jpg
   text: Father's personal & professional website.
@@ -12,7 +18,7 @@
   linkOrDownload: <i class="fas fa-download"></i>
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
-  text: Uses NLP to generate Shakespearean works. Made with Python.
+  text: Uses NLP to generate Shakespearean works.
   github: https://github.com/jiroger/shakespearegenerator
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
@@ -34,9 +40,9 @@
   github: https://github.com/jiroger/songfp
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
-- name: fasdjf
+- name: Word Analogy Thingy
   pic: /assets/img/download.png
-  text: 7
+  text:
   github: #
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
