@@ -1,6 +1,6 @@
 - name: Dailies-Bot
   pic: /assets/img/download.png
-  text: Automates all the common dailies + more for Neopets. (WIP)
+  text: Automates all the common dailies & more for Neopets. (WIP)
   github: https://github.com/jiroger/dailies-bot
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
@@ -24,15 +24,15 @@
   linkOrDownload: <i class="fas fa-link"></i>
 - name: 2048
   pic: /assets/img/2048.jpg
-  text: Written in Java & Processing (the original used JS).
+  text: The original used JS; this one's written in Java.
   github: https://github.com/jiroger/2048
   link: /assets/code/Run2048.jar
   linkOrDownload: <i class="fas fa-download"></i>
-- name: This Website
+- name: My Website
   pic: /assets/img/R.png
   text: (No description necessary... hopefully)
   github: https://github.com/jiroger/jiroger.github.io
-  link: #
+  link: rogerji.me
   linkOrDownload: <i class="fas fa-link"></i>
 - name: songfp
   pic: /assets/img/spectrogram.jpg
