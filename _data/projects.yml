@@ -1,6 +1,6 @@
 - name: Dailies-Bot
   pic: /assets/img/download.png
-  text: Automates all the common dailies + more for Neopets.
+  text: Automates all the common dailies + more for Neopets. (WIP)
   github: https://github.com/jiroger/dailies-bot
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
@@ -36,13 +36,19 @@
   linkOrDownload: <i class="fas fa-link"></i>
 - name: songfp
   pic: /assets/img/spectrogram.jpg
-  text: Shazam on a very teeny, tiny scale.
+  text: Shazam on a very teeny, tiny scale. (WIP)
   github: https://github.com/jiroger/songfp
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
 - name: Word Analogy Thingy
   pic: /assets/img/download.png
-  text:
+  text: (WIP)
   github: #
+  link: #
+  linkOrDownload: <i class="fas fa-link"></i>
+- name: Little Free Kindness
+  pic: /assets/img/download.png
+  text: (WIP)
+  github: https://github.com/jiroger/little-free-kindness
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
