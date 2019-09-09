@@ -1,0 +1,7 @@
+- name: Fall 2019
+  image: /assets/img/schedule/fall2019.png
+  course1: "<b>CSE 11: Introduction to Computer Science & Object-Oriented Programming</b>"
+  course2: "<b>CSE 20: Discrete Mathematics for Computer Science</b>"
+  course3: "DOC 1: Diversity"
+  course4: "MUS 4: Introduction to Western Music"
+  course5:
