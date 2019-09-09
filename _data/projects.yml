@@ -28,7 +28,7 @@
   github: https://github.com/jiroger/2048
   link: /assets/code/Run2048.jar
   linkOrDownload: <i class="fas fa-download"></i>
-- name: My Website
+- name: This Website
   pic: /assets/img/R.png
   text: (No description necessary... hopefully)
   github: https://github.com/jiroger/jiroger.github.io
@@ -36,7 +36,7 @@
   linkOrDownload: <i class="fas fa-link"></i>
 - name: songfp
   pic: /assets/img/spectrogram.jpg
-  text: Shazam on a very teeny, tiny scale. (WIP)
+  text: Coming soon!
   github: https://github.com/jiroger/songfp
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
@@ -48,7 +48,7 @@
   linkOrDownload: <i class="fas fa-link"></i>
 - name: Little Free Kindness
   pic: /assets/img/download.png
-  text: (WIP)
+  text: Coming soon!
   github: https://github.com/jiroger/little-free-kindness
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
