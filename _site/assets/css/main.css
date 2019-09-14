@@ -315,7 +315,14 @@ miscellaneous css stuff
 #lastModified.active {
   display: none;
 }
-
+.carousel {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.landscape-text {
+  display: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -525,6 +532,20 @@ miscellaneous css stuff
 
   #content .imgwrap {
     margin-left: 0px;
+  }
+
+  /* ---------------
+  carousel styling
+  ----------------*/
+
+  .carousel-caption h5 {
+    font-size: 0.7em;
+  }
+  .d-none {
+    display: block !important;
+  }
+  .landscape-text {
+    display: block;
   }
 }
 

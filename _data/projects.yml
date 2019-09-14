@@ -7,7 +7,7 @@
 - name: Xuhuai Ji's Homepage
   pic: /assets/img/xji.jpg
   text: Father's personal & professional website.
-  github: #
+  github: https://github.com/jiroger/xuhuai-jis-homepage
   link: https://stanford.edu/~r2llabc
   linkOrDownload: <i class="fas fa-link"></i>
 - name: MySet
@@ -32,7 +32,7 @@
   pic: /assets/img/R.png
   text: (No description necessary... hopefully)
   github: https://github.com/jiroger/jiroger.github.io
-  link: rogerji.me
+  link: http://www.rogerji.me
   linkOrDownload: <i class="fas fa-link"></i>
 - name: songfp
   pic: /assets/img/spectrogram.jpg
