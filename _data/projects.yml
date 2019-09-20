@@ -1,9 +1,3 @@
-- name: Dailies-Bot
-  pic: /assets/img/download.png
-  text: Coming soon!
-  github: https://github.com/jiroger/dailies-bot
-  link: #
-  linkOrDownload: <i class="fas fa-link"></i>
 - name: Xuhuai Ji's Homepage
   pic: /assets/img/xji.jpg
   text: Father's personal & professional website.
@@ -18,9 +12,9 @@
   linkOrDownload: <i class="fas fa-download"></i>
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
-  text: Coming soon!
-  github: https://github.com/jiroger/shakespearegenerator
-  link: #
+  text: Fabricates fake Shakespearean works
+  github: https://github.com/jiroger/shakespeare-generator
+  link: https://github.com/jiroger/shakespeare-generator
   linkOrDownload: <i class="fas fa-link"></i>
 - name: 2048
   pic: /assets/img/2048.jpg
@@ -30,7 +24,7 @@
   linkOrDownload: <i class="fas fa-download"></i>
 - name: This Website
   pic: /assets/img/R.png
-  text: (No description necessary... hopefully)
+  text: (Do ya really need a description?)
   github: https://github.com/jiroger/jiroger.github.io
   link: http://www.rogerji.me
   linkOrDownload: <i class="fas fa-link"></i>
@@ -44,6 +38,12 @@
   pic: /assets/img/download.png
   text: Coming soon!
   github: #
+  link: #
+  linkOrDownload: <i class="fas fa-link"></i>
+- name: Dailies-Bot
+  pic: /assets/img/download.png
+  text: Coming soon!
+  github: https://github.com/jiroger/dailies-bot
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
 - name: Little Free Kindness
