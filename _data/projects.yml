@@ -4,48 +4,58 @@
   github: https://github.com/jiroger/xuhuai-jis-homepage
   link: https://stanford.edu/~r2llabc
   linkOrDownload: <i class="fas fa-link"></i>
+
 - name: MySet
   pic: /assets/img/set.png
   text: A downloadable version of the <a href="https://www.setgame.com/"> card game Set</a>.
   github: https://github.com/jiroger/myset
   link: /assets/code/MySetRunnable.jar
   linkOrDownload: <i class="fas fa-download"></i>
+
 - name: Shakespeare Generator
   pic: /assets/img/shakespeare.jpg
   text: Fabricates fake Shakespearean works
   github: https://github.com/jiroger/shakespeare-generator
-  link: https://github.com/jiroger/shakespeare-generator
+  link: #
   linkOrDownload: <i class="fas fa-link"></i>
+  isLinkDisabled: disabled
+
 - name: 2048
   pic: /assets/img/2048.jpg
   text: A downloadable version of 2048.
   github: https://github.com/jiroger/2048
   link: /assets/code/Run2048.jar
   linkOrDownload: <i class="fas fa-download"></i>
+
 - name: This Website
   pic: /assets/img/R.png
   text: (Do ya really need a description?)
   github: https://github.com/jiroger/jiroger.github.io
   link: http://www.rogerji.me
   linkOrDownload: <i class="fas fa-link"></i>
+
 - name: songfp
   pic: /assets/img/spectrogram.jpg
   text: Coming soon!
   github: https://github.com/jiroger/songfp
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
+
 - name: Word Analogizer
-  pic: /assets/img/download.png
-  text: Coming soon!
-  github: #
+  pic: /assets/img/analogy.jpg
+  text: Solves analogies such as Paris is to France as Berlin is to ?
+  github: https://github.com/jiroger/word-analogizer
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
+  isLinkDisabled: disabled
+
 - name: Dailies-Bot
   pic: /assets/img/download.png
   text: Coming soon!
   github: https://github.com/jiroger/dailies-bot
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
+  
 - name: Little Free Kindness
   pic: /assets/img/download.png
   text: Coming soon!
