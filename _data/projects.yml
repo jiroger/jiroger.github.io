@@ -55,10 +55,10 @@
   github: https://github.com/jiroger/dailies-bot
   link: #
   linkOrDownload: <i class="fas fa-link"></i>
-  
+
 - name: Little Free Kindness
-  pic: /assets/img/download.png
-  text: Coming soon!
+  pic: /assets/img/lfk.png
+  text: Spread the kindness, one note at a time.
   github: https://github.com/jiroger/little-free-kindness
-  link: #
+  link: lfk-stage.herokuapp.com
   linkOrDownload: <i class="fas fa-link"></i>
