@@ -49,7 +49,7 @@
   linkOrDownload: <i class="fas fa-link"></i>
 
 - name: Word Analogizer
-  pic: /assets/img/analogy.jpg
+  pic: /assets/img/download.png
   text: Solves analogies such as Paris is to France as Berlin is to ?
   github: https://github.com/jiroger/word-analogizer
   link: #
