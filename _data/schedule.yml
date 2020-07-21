@@ -1,7 +1,26 @@
+- name: Summer Session II 2020
+  course1: "CSE 141: Computer Architecture"
+  course2: "CSE 141L: Computer Architecture Project"
+  course3: "ANSC 166: East Asian Film"
+- name: Summer Session I 2020
+  course1: "CSE 140: Digital Logic"
+  course2: "CSE 140L: Digital Logic Lab"
+  course3: "MATH 18: Linear Algebra"
+  course4: "CSE 197: Field Study in CS"
+- name: Spring 2020
+  course1: "CSE 30: Computer Organization & Systems Programming"
+  course2: "CSE 105: Theory of Computation"
+  course3: "MATH 20C: Multivariable Calculus"
+  course4: "CSE 198: Directed Group Study"
+  course5: "DOC 3: Imagination"
+- name: Winter 2020
+  course1: "CSE 12: Basic Data Structures & OOP"
+  course2: "CSE 21: Mathematics for Algorithms & Systems"
+  course3: "CSE 15L: Software Tools & Techniques Lab"
+  course4: "CSE 198: Directed Group Study"
+  course5: "DOC 2: Justice"
 - name: Fall 2019
-  image: /assets/img/schedule/fall2019.png
-  course1: "<b>CSE 11: Introduction to Computer Science & Object-Oriented Programming</b>"
-  course2: "<b>CSE 20: Discrete Mathematics for Computer Science</b>"
+  course1: "CSE 11: Introduction to Computer Science & OOP"
+  course2: "CSE 20: Discrete Mathematics for Computer Science"
   course3: "DOC 1: Diversity"
   course4: "MUS 4: Introduction to Western Music"
-  course5:
